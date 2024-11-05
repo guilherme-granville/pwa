@@ -22,9 +22,6 @@ body {
     transition: transform 0.3s ease;
 }
 
-.container:hover {
-    transform: scale(1.02);
-}
 
 header {
     display: flex;
