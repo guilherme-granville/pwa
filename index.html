@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras PWA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body class="dark-mode">
+    <div class="container">
+        <header>
+            <h1>Lista de Compras</h1>
+            <button id="toggle-theme">Modo Noturno</button>
+        </header>
+        <section class="input-section">
+            <label for="categoria">Escolha a categoria:</label>
+            <select id="categoria">
+                <option value="">Selecione...</option>
+                <option value="alimentos">Alimentos</option>
+                <option value="limpeza">Material de Limpeza</option>
+                <option value="utilidades">Utilidades</option>
+            </select>
+
+            <label for="item">Selecione um item:</label>
+            <select id="item">
+                <option value="">Selecione...</option>
+            </select>
+            <button id="adicionar">Adicionar</button>
+            <button id="limpar-lista">Limpar Lista</button>
+        </section>
+
+        <section class="filter-section">
+            <input type="text" id="filtro" placeholder="Filtrar itens..." />
+        </section>
+
+        <h2>Itens Selecionados:</h2>
+        <ul id="lista-compras"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
